@@ -4,13 +4,12 @@ require 'application_system_test_case'
 
 class ReportsTest < ApplicationSystemTestCase
   setup do
-    @report = reports(:one)
+    @report = reports(:report1)
 
     visit root_url
     fill_in 'Eメール', with: 'alice@example.com'
     fill_in 'パスワード', with: 'password'
     click_button 'ログイン'
-
   end
 
   test 'visiting the index' do
