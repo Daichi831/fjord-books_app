@@ -4,8 +4,3 @@ report1:
   user: alice
   title: report_title
   content: report_content
-
-# two:
-#   user: two
-#   title: MyString
-#   content: MyText
