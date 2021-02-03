@@ -9,6 +9,14 @@ alice:
   encrypted_password: <%= Devise::Encryptor.digest(User, 'password') %>
 
   
-#
-#two: {}
-# column: value
+me:
+  email: 'me@example.com'
+  encrypted_password: <%= Devise::Encryptor.digest(User, 'password') %>
+
+she:
+  email: 'she@example.com'
+  encrypted_password: <%= Devise::Encryptor.digest(User, 'password') %>
+
+he:
+  email: 'he@example.com'
+  encrypted_password: <%= Devise::Encryptor.digest(User, 'password') %>

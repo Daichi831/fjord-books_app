@@ -4,9 +4,9 @@ require 'test_helper'
 
 class UserTest < ActiveSupport::TestCase
   setup do
-    @me = User.create!(email: 'me@example.com', password: 'password')
-    @she = User.create!(email: 'she@example.com', password: 'password')
-    @he = User.create!(email: 'he@example.com', password: 'password')
+    @me = users(:me)
+    @she = users(:she)
+    @he = users(:he)
   end
 
   test '#name_or_email' do
@@ -29,11 +29,6 @@ class UserTest < ActiveSupport::TestCase
   end
 
   test '#unfollow' do
-    @me.follow(@she)
-    # フォローしていれば成功
-    assert @me.following?(@she)
-
-    @me.unfollow(@she)
     # フォローしていなければ成功
     assert_not @me.following?(@she)
   end

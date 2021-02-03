@@ -2,8 +2,8 @@
 
 report1:
   user: alice
-  title: saqmple
-  content: sample
+  title: report_title
+  content: report_content
 
 # two:
 #   user: two
