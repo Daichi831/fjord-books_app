@@ -22,7 +22,7 @@ class ReportsTest < ApplicationSystemTestCase
     click_on '新規作成'
 
     fill_in '内容', with: 'report_content_new'
-    fill_in 'タイトル', with: 'report_title_new'    
+    fill_in 'タイトル', with: 'report_title_new'
     click_on '登録する'
 
     assert_text '日報が作成されました。'
@@ -40,7 +40,7 @@ class ReportsTest < ApplicationSystemTestCase
     fill_in '内容', with: 'report_content_update'
     fill_in 'タイトル', with: 'report_title_update'
     click_on '更新する'
-    
+
     assert_text '日報が更新されました。'
     assert_text 'report_title_update'
     click_on '戻る'
